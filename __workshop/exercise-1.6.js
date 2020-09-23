@@ -11,6 +11,10 @@
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
   // complete the function
+  const newArray = array.filter(function(item) {
+    return item != string;
+  });
+  return newArray;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
