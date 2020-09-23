@@ -17,7 +17,15 @@
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
   // complete the function
-}
+  const fullName = string.split(" ");
+  if (fullName.length > 2) {
+    const firstName = fullName.shift();
+    const lastName = fullName.pop();
+    return firstName +' '+ lastName;
+  } else if (fullName.length < 3) {
+    return fullName.toString();
+  }
+  }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
