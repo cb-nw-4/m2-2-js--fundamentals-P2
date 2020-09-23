@@ -23,7 +23,7 @@ function removeMiddleName(string) {
     const lastName = fullName.pop();
     return firstName +' '+ lastName;
   } else if (fullName.length < 3) {
-    return fullName.toString();
+    return fullName.join(' ');
   }
   }
 // -----------------------------------------------------------------
