@@ -9,13 +9,9 @@
 // -----------------------------------------------------------------
 function keepLong(list) {
     // list is an array of strings
-    let newArray = [];
-    list.forEach(element => {
-        if (element.length > 5) {
-            newArray.push(element)
-        }
-    });
-    return newArray;
+    let newList = [];
+    return newList = list.filter(element => element.length > 5)
+
 
 }
 // -----------------------------------------------------------------

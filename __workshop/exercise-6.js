@@ -9,13 +9,8 @@
 // -----------------------------------------------------------------
 function removeEvens(list) {
     // list is an array of numbers
-    let newArray = [];
-    list.forEach(element => {
-        if (element % 2 != 0) {
-            newArray.push(element)
-        }
-    });
-    return newArray;
+    let newList = [];
+    return newList = list.filter(element => element % 2 !== 0)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

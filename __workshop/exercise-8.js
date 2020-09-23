@@ -9,12 +9,8 @@
 // -----------------------------------------------------------------
 function greet(list) {
     // list is an array of strings
-
-    return list.forEach(element => {
-        `Hello ${element}`
-    });
-
-
+    let newList = [];
+    return newList = list.map(element => "Hello " + element)
 
 }
 // -----------------------------------------------------------------
