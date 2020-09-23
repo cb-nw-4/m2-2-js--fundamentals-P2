@@ -9,6 +9,10 @@
 // -----------------------------------------------------------------
 function keepLong(list) {
   // list is an array of strings
+  let words=list.filter(function(entry){
+    return entry.length>5;
+  });
+  return words;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

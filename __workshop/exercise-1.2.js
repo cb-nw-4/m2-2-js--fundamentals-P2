@@ -9,8 +9,11 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+let str='Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137';
+console.log(arrOFNames(str));
 function arrOFNames(string) {
   // complete the function
+  return string.split(',');
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

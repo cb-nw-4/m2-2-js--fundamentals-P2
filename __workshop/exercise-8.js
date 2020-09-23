@@ -8,6 +8,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
+  let words= list.map(function(entry){
+    let newtext='Hello';
+    let newarray= newtext.concat(' ').concat(entry);
+    return newarray;
+  });
+  return words;
   // list is an array of strings
 }
 // -----------------------------------------------------------------

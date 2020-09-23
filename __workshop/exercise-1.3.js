@@ -8,8 +8,11 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+let montreal = 'This city if full of construction. You see orange cones, hear drilling machines and the detour sign everywhere.';
+console.log(characterCount(montreal));
 function characterCount(string) {
   // complete the function
+  return string.length;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

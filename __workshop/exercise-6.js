@@ -7,8 +7,15 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+let evens=[];
 function removeEvens(list) {
   // list is an array of numbers
+  list.forEach(function(entry){
+    if(entry%2===0)
+      evens.push(entry);
+    
+  });
+  return console.log(evens);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

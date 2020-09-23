@@ -10,6 +10,18 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   // list is an array of strings
+  let newarray=list.filter(function(tree){
+    let words=tree.length>4;
+    return words;
+  });
+
+  let helloword= newarray.map(function(entry){
+    let newtext='Hello';
+    let newarray2= newtext.concat(' ').concat(entry);
+    return newarray2;
+  });
+
+  return helloword;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

@@ -12,8 +12,19 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+let notCode=new Array();
 function decodeMessage(string, notCode) {
   // complete the function
+  // for(let i=0;i<=notCode.length; i++) {
+    
+  //   return string.replace(notCode[i], '');
+  //   return console.log(notCode[i]);
+  // }
+
+  notCode.forEach(function(entry){
+      let str= string.replace(entry, ''); 
+  });
+  return str;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

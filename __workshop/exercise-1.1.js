@@ -7,8 +7,10 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+let arr=countNames('Philip George Charles Orleans Michael');
+let len=arr.length;
+console.log(len);
 function countNames(fullName) {
-  // complete the function
   return fullName.split(" ");
 }
 // -----------------------------------------------------------------

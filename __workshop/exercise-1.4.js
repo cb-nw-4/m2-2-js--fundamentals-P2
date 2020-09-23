@@ -17,6 +17,10 @@
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
   // complete the function
+  let newarray=string.split(' ');
+  let fname= newarray[0];
+  let lname=newarray[newarray.length-1];
+  return fname.concat(' ').concat(lname);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
