@@ -10,7 +10,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function arrOFNames(string) {
-  // complete the function
+  return string.split(", ");
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -25,6 +25,11 @@ console.log(
   )
 );
 // Create more test examples.
+console.log(
+  arrOFNames(
+    "Salvador Dalí, Andy Warhol, Roy Lichtenstein, Claude Monet, Yayoi Kusama"
+  )
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = arrOFNames;
