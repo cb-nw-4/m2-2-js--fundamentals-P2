@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/journey-education/m2-1-js--fundamentals-P1#readme",
   "dependencies": {
-    "jest": "^26.1.0"
+    "jest": "^26.1.0",
+    "yarn": "^1.22.5"
   },
   "jest": {
     "verbose": true,

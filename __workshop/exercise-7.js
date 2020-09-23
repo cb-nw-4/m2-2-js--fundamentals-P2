@@ -8,13 +8,21 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
-  // list is an array of strings
+    // list is an array of strings
+    let newArray = [];
+    list.forEach(element => {
+        if (element.length > 5) {
+            newArray.push(element)
+        }
+    });
+    return newArray;
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(
-  keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
+    keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
 );
 
 // Create more test cases.

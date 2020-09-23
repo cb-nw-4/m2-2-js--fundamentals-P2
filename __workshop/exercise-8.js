@@ -8,7 +8,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
-  // list is an array of strings
+    // list is an array of strings
+
+    return list.forEach(element => {
+        `Hello ${element}`
+    });
+
+
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

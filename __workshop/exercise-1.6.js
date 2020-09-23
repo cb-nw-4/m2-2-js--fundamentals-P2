@@ -10,7 +10,10 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
+    // complete the function
+    let indexOfString = array.indexOf(string);
+    let newArray = array.slice(0, indexOfString).concat(array.slice(indexOfString + 1));
+    return newArray;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

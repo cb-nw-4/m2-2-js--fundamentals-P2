@@ -6,7 +6,10 @@
 //
 // Edit only the code between the lines (below)
 function getMax(num1, num2) {
-  // your code here...
+    // your code here...
+    let max;
+    (num1 > num2) ? (max = num1) : (max = num2);
+    return max;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
