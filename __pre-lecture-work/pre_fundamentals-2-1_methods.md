@@ -97,9 +97,9 @@ The `.concat()` method is used to join two or more strings.
 
 ```js
 // Example 4
-let partOne = 'Do or do not. ';
+let partOne = 'Do or do not.';
 let partTwo = 'There is no try.';
-partOne.concat(partTwo);
+partOne.concat(' ' + partTwo);
 'Do or do not. There is no try.'
 ```
 
@@ -236,34 +236,7 @@ age.replace("23 years ", "");
 // Exercise 4
 const ask = 'How are you today?';
 
-ask.toLowerCase();
-'how are you today?'
-
-askArray = ask.split(" ");
-[ 'how', 'are', 'you', 'today?' ]
-
-askArray.pop();
-'today?'
-
-askArray.push('yesterday');
-4
-
-askArray;
-[ 'how', 'are', 'you', 'yesterday' ]
-
-// alternatively
-
-ask.toLowerCase();
-'how are you today?'
-
-askArray = ask.split(" ");
-[ 'how', 'are', 'you', 'today?' ]
-
-askArray.splice(-1, 1, 'yesterday');
-[ 'today?' ]
-
-askArray
-[ 'how', 'are', 'you', 'yesterday' ]
+console.log(ask.replace('today', 'yesterday').split(' '));
 
 // output: ["how", "are", "you", "yesterday?"]
 ```
