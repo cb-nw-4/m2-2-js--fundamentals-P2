@@ -13,6 +13,13 @@ function arrOFNames(string) {
   var nameArray = string.split(',');
   return nameArray;
 }
+// -----------------------------------------------------------------
+// Edit only the code between the lines (above)
+//
+//
+//
+
+// Call the function to test your code.
 console.log(
   arrOFNames(
     "Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Rick C-137"
@@ -22,11 +29,3 @@ console.log(
 
 // This is needed for automated testing (more on that later)
 module.exports = arrOFNames;
-
-// -----------------------------------------------------------------
-// Edit only the code between the lines (above)
-//
-//
-//
-
-// Call the function to test your code.
