@@ -16,7 +16,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  if (!string || 0 === string.length)
+    return "";
+
+  let myArray = string.split(" ");  
+  if (myArray.length === 1)
+    return `${myArray.pop()}`;
+
+  return `${myArray.shift() + " " + myArray.pop()}`;  
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
