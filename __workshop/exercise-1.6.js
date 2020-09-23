@@ -10,7 +10,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
+  return array.filter(function(word) {
+    return word !== string;
+  });
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

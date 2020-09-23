@@ -17,7 +17,7 @@ function decodeMessage(string, notCode) {
   notCode.forEach(function(code) {
     newString = newString.replace(code, "");    
   });
-  return newString;  
+  return newString; 
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
