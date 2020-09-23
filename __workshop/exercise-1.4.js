@@ -16,7 +16,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  let names = string.split(' ');
+  if (names.length > 1) {
+    return `${names[0]} ${names[names.length - 1]}`;
+  } else {
+    return names[0];
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
