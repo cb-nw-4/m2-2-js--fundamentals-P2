@@ -14,8 +14,8 @@
 // -----------------------------------------------------------------
 function decodeMessage(string, notCode) {
   let newString = string;
-  notCode.forEach(function(code) {
-    newString = newString.replace(code, "");    
+  notCode.forEach(function(code) {    
+    newString = newString.replace(new RegExp(code, 'g'), '');    
   });
   return newString; 
 }
@@ -43,6 +43,8 @@ console.log(
   )
 );
 // Create more test examples.
+console.log(decodeMessage("I anotm tbaconhe notwalrus.", ["not", "bacon"]));
+console.log(decodeMessage("baconI anotm tbaconhe notwalrus.", ["not", "bacon"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = decodeMessage;
