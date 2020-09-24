@@ -5,9 +5,12 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+const average;
 function calculateAverage(num1, num2, num3, num4, num5) {
-  // code here
+  average = (num1 + num2 + num3 + num4 + num5)/5
+  return Math.round(average)
 }
+console.log(calculateAverage(3, 1, 1, 1, 1));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
