@@ -8,7 +8,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
-  // list is an array of strings
+    list.forEach(function(word, i){
+      let str = "Hello ";
+      list[i] = str.concat(word);
+   });
+   return list;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -16,6 +20,8 @@ function greet(list) {
 console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
 
 // Create more test cases.
+console.log(greet([""]));
+console.log(greet(["Hello", "Billy Thomas"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = greet;

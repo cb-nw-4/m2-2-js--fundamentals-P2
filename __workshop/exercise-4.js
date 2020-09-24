@@ -6,7 +6,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(num1, num2, num3, num4, num5) {
-  // code here
+  const total = num1 + num2 + num3 + num4 + num5;
+  return Math.round(total/5);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -16,6 +17,8 @@ function calculateAverage(num1, num2, num3, num4, num5) {
 console.log(calculateAverage(3, 1, 1, 1, 1));
 
 // Create more test cases.
+console.log(calculateAverage(10, 10, 10, 10, 10)); //10
+console.log(calculateAverage(10, 4, 5, 18, 10)); //9
 
 // This is needed for automated testing (more on that later)
 module.exports = calculateAverage;

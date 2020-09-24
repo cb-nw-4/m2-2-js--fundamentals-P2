@@ -9,6 +9,13 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  const letterArray = str.split("");
+  let count = 0;
+  letterArray.forEach(function (letter) {
+    if (letter === char)
+      count += 1;
+  });
+  return count;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -16,6 +23,9 @@ function countChar(str, char) {
 console.log(countChar("BananaBabyBubbles", "a"));
 
 // Create more test cases.
+console.log(countChar("Bubble", "a"));
+console.log(countChar("Bubble", "B"));
+
 
 // This is needed for automated testing (more on that later)
 module.exports = countChar;

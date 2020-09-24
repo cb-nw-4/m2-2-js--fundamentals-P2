@@ -13,7 +13,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function decodeMessage(string, notCode) {
-  // complete the function
+  let newString = string;
+  notCode.forEach(function(code) {    
+    newString = newString.replace(new RegExp(code, 'g'), '');    
+  });
+  return newString; 
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -39,6 +43,8 @@ console.log(
   )
 );
 // Create more test examples.
+console.log(decodeMessage("I anotm tbaconhe notwalrus.", ["not", "bacon"]));
+console.log(decodeMessage("baconI anotm tbaconhe notwalrus.", ["not", "bacon"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = decodeMessage;

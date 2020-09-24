@@ -8,8 +8,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function allLong(list) {
-  // list is an array of strings
-  return list.every(function (word) {
+   return list.every(function (word) {
     return word.length > 4;
   });
 }
@@ -22,6 +21,8 @@ console.log(
 );
 
 // Create more test cases.
+console.log(allLong(["Scot", "Boby", "Rick", "Jimy"]));
+console.log(allLong(["Scott", "Robin", "Robin", "Jimmy"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = allLong;
