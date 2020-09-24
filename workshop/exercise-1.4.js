@@ -16,7 +16,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  let nameArray = string.split(' ')
+  if(nameArray.length >=2) {
+  let firstName = nameArray.shift()
+  let lastName = nameArray.pop()
+  return firstName.concat(` ${lastName}`)
+  } else {
+    return nameArray.toString()
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
