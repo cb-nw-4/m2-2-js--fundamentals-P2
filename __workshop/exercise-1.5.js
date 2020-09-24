@@ -13,7 +13,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function decodeMessage(string, notCode) {
-  // complete the function
+  let message = string;
+  notCode.forEach(function(word) {
+    message = message.replace(word, "");
+  })
+  return message;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -39,6 +43,7 @@ console.log(
   )
 );
 // Create more test examples.
+console.log(decodeMessage("“Crepaintatividrawty tasculptkes courmakeage”", ["paint", "draw", "sculpt", "make"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = decodeMessage;
