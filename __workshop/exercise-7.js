@@ -18,7 +18,6 @@ console.log(
   keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
 );
 
-
 // Create more test cases.
 ["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"]
 ["Vanya", "Five", "Luther", "Klaus", "Ben", "Alison", "Diego"]
