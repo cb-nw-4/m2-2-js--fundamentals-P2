@@ -14,7 +14,16 @@
 // -----------------------------------------------------------------
 function decodeMessage(string, notCode) {
   // complete the function
+  notCode.forEach((element) => {
+    
+    string = string.replace(element, "")
+    
+  });
+  return string
+
 }
+
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

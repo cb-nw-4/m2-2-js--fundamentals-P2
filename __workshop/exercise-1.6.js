@@ -11,6 +11,11 @@
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
   // complete the function
+  array.forEach(element => {
+    element.filter()
+  })
+
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
