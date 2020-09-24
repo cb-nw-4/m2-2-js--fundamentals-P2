@@ -25,6 +25,17 @@ console.log(
   )
 );
 // Create more test examples.
+console.log(
+  arrOFNames(
+    "Simple Rick, Slow Rick"
+  )
+);
+
+console.log(
+  arrOFNames(
+    "Simple Rick"
+  )
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = arrOFNames;

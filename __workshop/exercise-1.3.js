@@ -21,6 +21,8 @@ function characterCount(string) {
 console.log(characterCount("wubba lubba dub dub"));
 
 // Create more test examples.
+console.log(characterCount("w"));
+console.log(characterCount("w o w"));
 
 // This is needed for automated testing (more on that later)
 module.exports = characterCount;
