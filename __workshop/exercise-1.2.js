@@ -10,8 +10,13 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function arrOFNames(string) {
-  // complete the function
+  return string.split(", ")
 }
+console.log(
+  arrOFNames(
+    "Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Rick C-137"
+  )
+);
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

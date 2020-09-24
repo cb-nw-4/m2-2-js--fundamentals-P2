@@ -16,8 +16,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  return string.split(" ").slice(1).join(" ")
 }
+console.log(removeMiddleName("Morty Antoine Smith"));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
