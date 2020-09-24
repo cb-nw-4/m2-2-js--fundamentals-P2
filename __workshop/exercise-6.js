@@ -7,10 +7,11 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function removeEvens(list) {
-  let noEvens = list.filter(list => list%2 !=0)
+function removeEvens(lists) {
+  let noEvens = lists.filter(list => list%2 !=0)
   return noEvens;
 }
+console.log(removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
