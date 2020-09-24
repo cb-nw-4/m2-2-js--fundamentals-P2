@@ -8,7 +8,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countChar(str, char) {
-  // str and char are both strings
+  return str.split(char).length - 1;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
