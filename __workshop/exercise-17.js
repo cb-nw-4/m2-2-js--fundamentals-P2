@@ -20,7 +20,17 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function findArmstrongNumbers(num1, num2) {
-  // num1 and num2 are Numbers
+  let myArray = [];
+  for (let num = num1; num <= num2; num++) {
+    let numString = num.toString().split("");
+    let sum = 0;
+    for (let i = 0; i < numString.length; i++) {
+      sum += Math.pow(Number(numString[i]), numString.length);
+    }
+    if (num === sum)
+      myArray.push(num);  
+  }
+  return myArray;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -28,6 +38,8 @@ function findArmstrongNumbers(num1, num2) {
 console.log(findArmstrongNumbers(0, 1000000));
 
 // Create more test cases.
+console.log(findArmstrongNumbers(0, 10));
+console.log(findArmstrongNumbers(9, 371));
 
 // This is needed for automated testing (more on that later)
 module.exports = findArmstrongNumbers;
