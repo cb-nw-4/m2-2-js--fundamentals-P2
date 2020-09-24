@@ -16,7 +16,18 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  var firstNameLastName = string.split(' ');
+  if (firstNameLastName.length === 5){
+    firstNameLastName.splice(1,3);
+  } else if (firstNameLastName.length === 4){
+    firstNameLastName.splice(1,2);
+    return firstNameLastName.join(' ');
+  } else if (firstNameLastName.length === 3) {
+    firstNameLastName.splice(1,1);
+    return firstNameLastName.join(' ');
+  } else {
+    return firstNameLastName.join(' ');
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -28,6 +39,9 @@ function removeMiddleName(string) {
 console.log(removeMiddleName("Morty Antoine Smith"));
 
 // Create more test examples.
-
+Princess Consuela Banana Hammock
+Marie Antoinette
+Adele 
+Beyonce
 // This is needed for automated testing (more on that later)
 module.exports = removeMiddleName;
