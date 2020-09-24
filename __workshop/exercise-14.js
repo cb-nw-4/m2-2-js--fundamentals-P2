@@ -9,6 +9,16 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  let countNumber =0;
+  let chartoFind = new RegExp(char,'g');
+  
+  let matchesArray = str.match(chartoFind);
+
+  if(matchesArray !=null){
+    countNumber = matchesArray.length;
+  }
+
+  return countNumber;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -16,6 +26,7 @@ function countChar(str, char) {
 console.log(countChar("BananaBabyBubbles", "a"));
 
 // Create more test cases.
-
+console.log(countChar("PlantbilboWater","s"));
+console.log(countChar("BadBedBonappetit","p"));
 // This is needed for automated testing (more on that later)
 module.exports = countChar;
