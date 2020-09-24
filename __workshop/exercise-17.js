@@ -22,15 +22,15 @@
 function findArmstrongNumbers(num1, num2) {
   let myArray = [];
   for (let num = num1; num <= num2; num++) {
-    let numString = num.toString().split("");
-    let sum = 0;
-    for (let i = 0; i < numString.length; i++) {
-      sum += Math.pow(Number(numString[i]), numString.length);
-    }
+    let numArr = num.toString().split("");  
+    let sum = 0; 
+    numArr.forEach(function(n) {
+      sum += Math.pow(Number(n), numArr.length);
+    });    
     if (num === sum)
       myArray.push(num);  
   }
-  return myArray;
+  return myArray;  
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
