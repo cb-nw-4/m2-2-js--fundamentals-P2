@@ -11,10 +11,11 @@
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
   // complete the function
-  array.forEach(element => {
-    element.filter()
+  let newArr = array.filter(element => {
+    if(element === string) return false
+    else return true
   })
-
+return newArr
 
 }
 // -----------------------------------------------------------------
