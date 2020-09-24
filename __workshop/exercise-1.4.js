@@ -15,8 +15,18 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function removeMiddleName(string) {
-  // complete the function
+function removeMiddleName(inName) {
+  
+  let shortName = inName;
+  let firstNameCut = inName.indexOf(' ');
+  let lastNameIndex = inName.lastIndexOf(' ');
+
+  if( lastNameIndex != (-1 && firstNameCut))
+  {
+      shortName = inName.slice(0, firstNameCut) + ' ' + inName.slice(lastNameIndex+1);
+  }
+
+  return shortName;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -28,6 +38,8 @@ function removeMiddleName(string) {
 console.log(removeMiddleName("Morty Antoine Smith"));
 
 // Create more test examples.
-
+console.log(removeMiddleName("Marie Antoinette"));
+console.log(removeMiddleName("Cleopatra"));
+console.log(removeMiddleName("Salvador Felipe Jacinto Dalí"));
 // This is needed for automated testing (more on that later)
 module.exports = removeMiddleName;
