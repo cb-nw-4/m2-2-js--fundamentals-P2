@@ -18,6 +18,8 @@ function calculateAverage(grades) {
 console.log(calculateAverage([76, 60, 83, 100, 78]));
 
 // Create more test cases.
+console.log(calculateAverage([1, 2, 3, 4, 5]));
+console.log(calculateAverage([35]));
 
 // This is needed for automated testing (more on that later)
 module.exports = calculateAverage;
