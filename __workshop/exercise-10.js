@@ -9,9 +9,14 @@
 // -----------------------------------------------------------------
 function allLong(list) {
   // list is an array of strings
-  return list.every(function (word) {
-    return word.length > 4;
+  // return list.every(function (word) {
+  //   return word.length > 4;
+  // });
+  let newstring=list.every(function(word){
+    let newarray= word.length>4;
+    return newarray;
   });
+  return newstring;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

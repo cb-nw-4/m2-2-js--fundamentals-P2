@@ -9,6 +9,13 @@
 // -----------------------------------------------------------------
 function filterNonUnique(arr) {
   // arr is an array of values of any type
+  let temparr=[];
+  let newarr=arr;
+  return newarr.filter(function(word){
+    if(temparr.indexOf(word)===-1){
+      return temparr.push(word);
+    }
+  });
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

@@ -7,19 +7,27 @@
 // -----------------------------------------------------------------
 function countBs(str) {
   // str is a string
-  const letterArray = str.split("");
+  // const letterArray = str.split("");
 
-  let count = 0;
-  letterArray.forEach(function (ltr) {
-    if (ltr === "B") count += 1;
-  });
+  // let count = 0;
+  // letterArray.forEach(function (ltr) {
+  //   if (ltr === "B") count += 1;
+  // });
 
+  const arr=str.split('');
+  let count=0;
+  for(let i=0;i<arr.length; i++){
+    if(arr[i]==='B'){
+      count++;
+    }
+  }
+  console.log(arr);
   return count;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
-console.log(countBs("BananaBabyBubbles"));
+console.log(countBs("BananaBlueberryBabyBubbles"));
 
 // Create more test cases.
 

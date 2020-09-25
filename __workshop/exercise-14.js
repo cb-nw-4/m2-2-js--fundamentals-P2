@@ -9,6 +9,23 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  // let arr=str.split('');
+  // let count=0;
+  // let res=arr.forEach(function(word){
+  //   if(word===char){count++;}
+  //   return count;
+  // });
+  // return res;
+
+  const arr=str.split('');
+  let count=0;
+  for(let i=0;i<arr.length; i++){
+    if(arr[i]===char){
+      count++;
+    }
+  }
+  console.log(arr);
+  return count;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

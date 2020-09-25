@@ -11,12 +11,23 @@
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
   // complete the function
+  let newarr=new Array;
+  let str= string;
+  let arr=array;
+  console.log(arr);
+  console.log(str);
+  for(let i=0;i<arr.length;i++){
+    if(arr[i] !== str){
+        newarr.push(arr[i]);
+    
+  }
+return newarr;
 }
+}
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
-//
-//
-//
+
 
 // Call the function to test your code.
 console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
