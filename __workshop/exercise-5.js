@@ -6,7 +6,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
-  // code here
+  let newArray = array.filter ( (element)=> { 
+    if( element === item) return true; 
+    else return false; 
+  });
+  if (newArray[0]===item) return true; 
+  else return false; 
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

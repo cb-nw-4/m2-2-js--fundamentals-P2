@@ -9,7 +9,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greetLong(list) {
-  // list is an array of strings
+  let hello = "Hello ";
+  let newList = list.filter ((element) => { 
+    return element.length >=4;
+  }); 
+  let greetNewList = newList.map ((element) => { 
+    return "Hello "+element; 
+  });
+  return greetNewList;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

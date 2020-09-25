@@ -11,7 +11,19 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
-  // num1 and num2 are Numbers
+    let array = [];
+    for (let i=0; i<10; i++) { 
+        for (let k=0; k<10; k++) { 
+            for (let l=0; l<10; l++) { 
+                let sumOfDigits = Math.pow(i,3) + Math.pow(k,3) + Math.pow(l,3); 
+                let number = i*100 + k*10 + l; 
+                if ( sumOfDigits == number ) { 
+                    array.push(number); 
+                };
+            }; 
+        }; 
+    };
+    return array; 
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
