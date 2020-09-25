@@ -8,7 +8,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function allLong(list) {
-  let checkLong = list.every(element => element.length >= 5);
+  let checkLong = list.every(element => {return element.length >= 5});
   return checkLong;
 }
 // -----------------------------------------------------------------
