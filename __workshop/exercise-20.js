@@ -15,8 +15,16 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function every(arr, func) {
-  // arr is an array and f is a function
-  // func takes 1 argument and returns a boolean
+  let evenFlag = true;
+
+  for (let x = 0; x < arr.length; x++) {
+
+    if (!func(arr[x])) {
+      evenFlag = false;
+    }
+  }
+
+  return evenFlag;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
