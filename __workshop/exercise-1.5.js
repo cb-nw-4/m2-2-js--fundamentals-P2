@@ -12,9 +12,13 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function decodeMessage(string, notCode) {
-  // complete the function
-}
+function decodeMessage(string, notCode) { 
+    notCode.forEach ( function(element,index) {
+      string= string.replace(notCode[index], '');
+  });  
+  return string; 
+} 
+  
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

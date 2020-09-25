@@ -6,7 +6,6 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
-  // grades is an array of numbers
   let sum = grades.reduce(function (a, b) {
     return a + b;
   });

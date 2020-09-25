@@ -8,7 +8,10 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
-  // list is an array of strings
+  let hello = "Hello ";
+  return list.map ( function (listItem) { 
+    return hello.concat(listItem);
+  }); 
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

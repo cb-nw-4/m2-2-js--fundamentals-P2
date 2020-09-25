@@ -8,7 +8,6 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function allLong(list) {
-  // list is an array of strings
   return list.every(function (word) {
     return word.length > 4;
   });

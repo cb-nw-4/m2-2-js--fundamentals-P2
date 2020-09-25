@@ -13,7 +13,6 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
-  // grades is an array of numbers
   const numericalGrade =
     grades.reduce(function (a, b) {
       return a + b;
