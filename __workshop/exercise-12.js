@@ -13,20 +13,20 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
-  // grades is an array of numbers
-  const numericalGrade =
-    grades.reduce(function (a, b) {
-      return a + b;
-    }) / grades.length;
+    // grades is an array of numbers
+    let numericalGrade = grades.reduce(function(a, b) {
+        return a + b;
+    });
 
-  let letterGrade = "A";
+    let average = (numericalGrade / grades.length);
 
-  if (numericalGrade < 90) letterGrade = "B";
-  if (numericalGrade < 80) letterGrade = "C";
-  if (numericalGrade < 70) letterGrade = "D";
-  if (numericalGrade < 60) letterGrade = "F";
+    let letterGrade = 'A';
+    if (average < 90) { letterGrade = 'B' }
+    if (average < 80) { letterGrade = 'C' }
+    if (average < 70) { letterGrade = 'D' }
+    if (average < 60) { letterGrade = 'F' }
 
-  return letterGrade;
+    return letterGrade;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

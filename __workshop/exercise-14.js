@@ -8,7 +8,17 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countChar(str, char) {
-  // str and char are both strings
+    // str and char are both strings
+
+    const letterArray = str.split("");
+    let count = 0;
+
+    letterArray.forEach(element => {
+        if (element === char) { count += 1; }
+
+    });
+    return count;
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
