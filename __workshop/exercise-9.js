@@ -29,6 +29,6 @@ function greetLong(list) {
 console.log(greetLong(["Scott", "Bob", "Ric", "Jim"]));
 
 // Create more test cases.
-
+console.log(greetLong(["Renaud", "ELizabeth", "John", "Luke"]));
 // This is needed for automated testing (more on that later)
 module.exports = greetLong;
