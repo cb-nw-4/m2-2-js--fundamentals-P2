@@ -6,18 +6,16 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
-  // grades is an array of numbers
-  let sum = grades.reduce(function (a, b) {
-    return a + b;
-  });
-  return Math.round(sum / grades.length);
-}
+  let average = grades.reduce((a, b) => a + b, 0) / grades.length;
+  return Math.round(average);
+  }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(calculateAverage([76, 60, 83, 100, 78]));
 
 // Create more test cases.
+console.log(calculateAverage([38, 40, 2, 10, 29]));
 
 // This is needed for automated testing (more on that later)
 module.exports = calculateAverage;
