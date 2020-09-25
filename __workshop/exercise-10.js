@@ -9,9 +9,11 @@
 // -----------------------------------------------------------------
 function allLong(list) {
   // list is an array of strings
-  return list.every(function (word) {
-    return word.length > 4;
-  });
+  let isConform = false;
+  isConform = list.every(function(item){
+    return item.length >=5;
+  })
+  return isConform;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -25,3 +27,8 @@ console.log(
 
 // This is needed for automated testing (more on that later)
 module.exports = allLong;
+
+ /* return list.every(function (word) {
+    return word.length > 4;
+     });
+    */

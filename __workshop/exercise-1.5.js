@@ -12,8 +12,31 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function decodeMessage(string, notCode) {
-  // complete the function
+function decodeMessage(inString, notCode) {
+  /*
+  ****This was my first attempt.
+  
+  let tempString = inString;
+  let arrayLength = notCode.length;
+  let containsCode = false;
+
+   for(let i =0; i<= arrayLength; i++)
+  {
+    containsCode = tempString.includes(notCode[i]);
+    if(containsCode){
+      tempString = tempString.replace(notCode[i], '');
+    }
+  }
+
+  return tempString; */
+
+  let decodedMessage = inString;
+
+  notCode.forEach(element => {
+    decodedMessage = decodedMessage.replace(element,'');
+  });
+  
+  return decodedMessage;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

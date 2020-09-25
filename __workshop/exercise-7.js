@@ -9,6 +9,13 @@
 // -----------------------------------------------------------------
 function keepLong(list) {
   // list is an array of strings
+  let newList;
+
+  newList = list.filter(function(listItem){
+    return listItem.length >5;
+  });
+
+  return newList;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -18,6 +25,9 @@ console.log(
 );
 
 // Create more test cases.
+console.log(
+  keepLong(["Canada", "Japan", "USA", "Germany"])
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;

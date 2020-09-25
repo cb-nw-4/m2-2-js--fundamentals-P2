@@ -9,8 +9,21 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function removeStringFromArray(array, string) {
-  // complete the function
+function removeStringFromArray(inArray, inString) {
+  
+  let tempArray = [];
+  let arrayLength = 0;
+
+  inArray.forEach(element => {
+    
+    if(element != inString){
+      tempArray.push(element);
+    }
+
+  });
+
+  return tempArray;
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

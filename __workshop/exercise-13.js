@@ -7,14 +7,13 @@
 // -----------------------------------------------------------------
 function countBs(str) {
   // str is a string
-  const letterArray = str.split("");
+  let countNumber =0;
+  let matchesArray = str.match(/B/g);
 
-  let count = 0;
-  letterArray.forEach(function (ltr) {
-    if (ltr === "B") count += 1;
-  });
-
-  return count;
+  if(matchesArray !=null){
+    countNumber = matchesArray.length;
+  }
+  return countNumber;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -22,6 +21,16 @@ function countBs(str) {
 console.log(countBs("BananaBabyBubbles"));
 
 // Create more test cases.
-
+console.log(countBs("PlantbilboWater"));
+console.log(countBs("BadBedBonappetit"));
 // This is needed for automated testing (more on that later)
 module.exports = countBs;
+
+ /* const letterArray = str.split("");
+
+  let count = 0;
+  letterArray.forEach(function (ltr) {
+    if (ltr === "B") count += 1;
+  });
+
+  return count;*/

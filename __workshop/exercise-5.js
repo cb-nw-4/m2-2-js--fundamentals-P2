@@ -5,8 +5,16 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function itemIsPresent(array, item) {
-  // code here
+function itemIsPresent(inArray, item) {
+  
+  let isPresent = false;
+  let foundIndex = inArray.indexOf(item);
+
+  if(foundIndex !=-1){ 
+    isPresent = true;
+  }
+
+  return isPresent;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -29,6 +37,6 @@ console.log(itemIsPresent(myArray, "funky")); // true
 console.log(itemIsPresent(myArray, "elephant")); // false
 
 // Create more test cases
-
+console.log(itemIsPresent(myArray, "unicorn")); // false
 // This is needed for automated testing (more on that later)
 module.exports = itemIsPresent;
