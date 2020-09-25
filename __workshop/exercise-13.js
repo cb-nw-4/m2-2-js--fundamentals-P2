@@ -30,6 +30,6 @@ function countBs(str) {
 console.log(countBs("BananaBlueberryBabyBubbles"));
 
 // Create more test cases.
-
+console.log(countBs("BakeABananaBlueBerryBubbleBretzel"));
 // This is needed for automated testing (more on that later)
 module.exports = countBs;
