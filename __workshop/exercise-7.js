@@ -8,7 +8,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
-  let newList = list.filter(word => word.length > 5);
+  let newList = list.filter(word => {return word.length > 5});
   return newList;
 }
 // -----------------------------------------------------------------
