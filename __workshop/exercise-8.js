@@ -9,7 +9,7 @@
 // -----------------------------------------------------------------
 function greet(list) {
   const greeting = "Hello "
-  let newGreeting = list.map(name => greeting.concat(name));
+  let newGreeting = list.map(name => {return greeting.concat(name)});
   return newGreeting;
 }
 // -----------------------------------------------------------------
