@@ -14,9 +14,6 @@ function removeStringFromArray(array, string) {
   let newarr=new Array;
   let str= string;
   let arr=array;
-  console.log(arr);
-  console.log(str);
-
   return arr.filter(function(word){
     return word !== str;
   });
@@ -30,6 +27,6 @@ function removeStringFromArray(array, string) {
 console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
 
 // Create more test examples.
-
+console.log(removeStringFromArray(["LaLa", "LA", "Land", "is", "weird"], "LA"));
 // This is needed for automated testing (more on that later)
 module.exports = removeStringFromArray;
