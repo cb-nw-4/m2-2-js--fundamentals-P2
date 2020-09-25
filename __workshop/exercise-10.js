@@ -27,6 +27,6 @@ console.log(
 );
 
 // Create more test cases.
-
+console.log(allLong(["Kirk", "Dave", "John", "Luke"]));
 // This is needed for automated testing (more on that later)
 module.exports = allLong;
