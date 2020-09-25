@@ -22,6 +22,8 @@ console.log(
 );
 
 // Create more test cases.
+console.log(allLong(["Homelander", "Queen Maeve", "Starlight", "A-Train", "Deep", "Black Noir", "Translucent"])
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = allLong;
