@@ -9,6 +9,11 @@
 // -----------------------------------------------------------------
 function keepLong(list) {
   // list is an array of strings
+  let longNames = list.filter(Element => {
+    if(Element.length > 5) return true
+    else return false
+  })
+  return longNames
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -18,6 +23,8 @@ console.log(
 );
 
 // Create more test cases.
+console.log(keepLong(["Captain America", "Iron Man", "Hulk", "Black Widow", "Hawkeye", "Thor"])
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;
