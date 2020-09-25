@@ -16,13 +16,10 @@ function removeStringFromArray(array, string) {
   let arr=array;
   console.log(arr);
   console.log(str);
-  for(let i=0;i<arr.length;i++){
-    if(arr[i] !== str){
-        newarr.push(arr[i]);
-    
-  }
-return newarr;
-}
+
+  return arr.filter(function(word){
+    return word !== str;
+  });
 }
 
 // -----------------------------------------------------------------
