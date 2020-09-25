@@ -11,7 +11,7 @@ let evens=[];
 function removeEvens(list) {
   // list is an array of numbers
   list.forEach(function(entry){
-    if(entry%2===0)
+    if(entry%2 !== 0)
       evens.push(entry);
     
   });
@@ -24,6 +24,6 @@ function removeEvens(list) {
 console.log(removeEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 // Create more test examples.
-
+console.log(removeEvens([11, 12, 13, 14, 15, 16, 17, 18, 19, 20]));
 // This is needed for automated testing (more on that later)
 module.exports = removeEvens;
