@@ -7,11 +7,9 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-let arr=countNames('Philip George Charles Orleans Michael');
-let len=arr.length;
-console.log(len);
 function countNames(fullName) {
-  return fullName.split(" ");
+
+  return fullName.split(" ").length;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -22,7 +20,7 @@ function countNames(fullName) {
 // Call the function to test your code.
 console.log(countNames("Morty Antoine Smith"));
 // Create more test examples:
-
+console.log(countNames('Philip George Charles Orleans Michael'));
 //
 // This is needed for automated testing (more on that later)
 module.exports = countNames;
