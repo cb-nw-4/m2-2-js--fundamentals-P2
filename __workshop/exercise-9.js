@@ -9,8 +9,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greetLong(list) {
-  let newList = list.filter(name => name.length >= 4);
-  let greeting = newList.map(name => "Hello " + name);
+  let newList = list.filter(name => {return name.length >= 4});
+  let greeting = newList.map(name => {return "Hello " + name});
   return greeting;
 }
 // -----------------------------------------------------------------
