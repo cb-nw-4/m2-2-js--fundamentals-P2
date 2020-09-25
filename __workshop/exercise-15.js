@@ -23,6 +23,6 @@ function filterNonUnique(arr) {
 console.log(filterNonUnique([1, 2, 3, 3, 4, 5, 6, 7, 7, 8]));
 
 // Create more test cases.
-
+console.log(filterNonUnique([11, 12, 13, 13, 14, 15, 16, 17, 17, 18]));
 // This is needed for automated testing (more on that later)
 module.exports = filterNonUnique;
