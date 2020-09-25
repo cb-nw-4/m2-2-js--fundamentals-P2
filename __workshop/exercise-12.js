@@ -13,20 +13,22 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
-  // grades is an array of numbers
-  const numericalGrade =
-    grades.reduce(function (a, b) {
-      return a + b;
-    }) / grades.length;
-
-  let letterGrade = "A";
-
-  if (numericalGrade < 90) letterGrade = "B";
-  if (numericalGrade < 80) letterGrade = "C";
-  if (numericalGrade < 70) letterGrade = "D";
-  if (numericalGrade < 60) letterGrade = "F";
-
-  return letterGrade;
+  let average = grades.reduce((a, b) => a + b, 0) / grades.length;
+  if (average < 60) {
+    return "F";
+  }
+  else if (average < 70) {
+    return "D";
+  }
+  else if (average < 80) {
+    return "C";
+  }
+  else if (average < 90) {
+    return "B";
+  }
+  else if (average <= 100) {
+    return "A";
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -35,6 +37,6 @@ function getLetterGrade(grades) {
 console.log(getLetterGrade([48, 95, 65, 48, 59, 78, 72, 65]));
 
 // Create more test cases.
-
+console.log(getLetterGrade([99, 95, 80, 86, 59, 78, 88, 91]));
 // This is needed for automated testing (more on that later)
 module.exports = getLetterGrade;
