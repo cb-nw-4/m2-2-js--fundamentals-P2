@@ -13,7 +13,7 @@
 function findNumbers(num1, num2) {
   // num1 and num2 are Numbers
   let newnum=new Array;
-  for(let i=num1;i<=num2;i++){
+  for(let i=num1;i<num2;i++){
     let sum=0;
     newnum=Array.from(String(i), Number);
     for(let j=0; j<newnum.length; j++){
@@ -21,21 +21,13 @@ function findNumbers(num1, num2) {
     }
     if(sum===i){console.log(`${i} is an Armstrong number.`);}
   }
-  return newnum.join();
+  
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(findNumbers(0, 1000));
 
-// Create more test cases.
-// for(let i=369;i<=372;i++){
-//   let sum=0;
-//   let newnum=Array.from(String(i), Number);
-//   for(let j=0; j<newnum.length; j++){
-//     sum=sum+(newnum[j]**newnum.length);
-//   }
-//   console.log(sum);
-// }
+
 // This is needed for automated testing (more on that later)
 module.exports = findNumbers;
