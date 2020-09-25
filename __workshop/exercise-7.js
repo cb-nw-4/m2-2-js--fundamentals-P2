@@ -22,6 +22,8 @@ console.log(
 );
 
 // Create more test cases.
-
+console.log(
+  keepLong(["Shakespeare", "Chaucer", "Austen", "Kirk", "Geoffrey", "Darwin"])
+);
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;
