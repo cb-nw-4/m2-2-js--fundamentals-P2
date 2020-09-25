@@ -22,6 +22,7 @@ function greet(list) {
 console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
 
 // Create more test cases.
+console.log(greet(["Renaud", "ELizabeth", "John", "Luke"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = greet;
