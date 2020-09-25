@@ -11,9 +11,12 @@
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
     // complete the function
-    let indexOfString = array.indexOf(string);
-    let newArray = array.slice(0, indexOfString).concat(array.slice(indexOfString + 1));
+    let newArray = array.filter(element => {
+        return element !== string
+    })
     return newArray;
+
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -25,6 +28,7 @@ function removeStringFromArray(array, string) {
 console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
 
 // Create more test examples.
+
 
 // This is needed for automated testing (more on that later)
 module.exports = removeStringFromArray;
