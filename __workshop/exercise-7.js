@@ -8,7 +8,28 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
-  // list is an array of strings
+  // console.log(list)
+  return list.filter(function(name){
+    if (name.toString().length > 5)
+    return name;
+  })
+
+  // list.forEach(function(name) {
+  //   if (name.toString().length > 5) {
+  //     return name;
+  //   }
+  //   console.log(name);
+  // })
+
+  // return list.forEach(function(element){
+  //   let nameOnly = element.toString(); <- Put this line in a function?
+  //   console.log(nameOnly);
+  //   let nameLength = nameOnly.length;
+  //   console.log(nameLength)
+  //   if (nameLength > 5) {
+  //   return nameOnly;
+  //   }
+  // })
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
