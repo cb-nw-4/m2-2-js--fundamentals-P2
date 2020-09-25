@@ -6,7 +6,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
-  // code here
+  if (array.includes(item)){
+    return true;
+  } else {
+    return false;
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -23,12 +27,14 @@ const myArray = [
   "program",
   "funky",
 ];
-
 // Call the function to test your code.
 console.log(itemIsPresent(myArray, "funky")); // true
 console.log(itemIsPresent(myArray, "elephant")); // false
 
 // Create more test cases
-
+"bee"
+"code"
+"bacon"
+"red"
 // This is needed for automated testing (more on that later)
 module.exports = itemIsPresent;

@@ -10,7 +10,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function arrOFNames(string) {
-  // complete the function
+  var nameArray = string.split(',');
+  return nameArray;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

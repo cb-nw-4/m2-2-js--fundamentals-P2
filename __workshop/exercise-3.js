@@ -9,8 +9,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getMax(num1, num2) {
-  // code here
+  var maximum = Math.max(num1, num2);
+  return maximum;
 }
+console.log(getMax(12, 43));
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

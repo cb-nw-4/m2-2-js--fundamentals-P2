@@ -7,15 +7,19 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function greet(list) {
-  // list is an array of strings
+function greet(lists) {
+  let newGreeting = lists.map(function(item){
+    return "Hello " + item
+  })
+  return newGreeting;
 }
-// -----------------------------------------------------------------
-// Edit only the code between the lines (above)
-
 console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
 
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)
 module.exports = greet;
+
+
+// -----------------------------------------------------------------
+// Edit only the code between the lines (above)

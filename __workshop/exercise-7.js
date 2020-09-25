@@ -7,8 +7,9 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function keepLong(list) {
-  // list is an array of strings
+function keepLong(lists) {
+  let longElements = lists.filter(list => list.length > 5);
+  return longElements;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -18,6 +19,8 @@ console.log(
 );
 
 // Create more test cases.
-
+["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"]
+["Vanya", "Five", "Luther", "Klaus", "Ben", "Alison", "Diego"]
+["Eleanor", "Chidi", "Tahani", "Jason", "Janet", "Michael"]
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;

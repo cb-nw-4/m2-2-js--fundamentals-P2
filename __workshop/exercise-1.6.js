@@ -10,8 +10,19 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
-}
+  let newArray = array.filter(function(element){
+    return element != string;
+  })
+  return newArray;
+  } 
+console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
+
+// Create more test examples.
+(["we", "example", "water", "carrots"], "water")
+
+// This is needed for automated testing (more on that later)
+module.exports = removeStringFromArray;
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
@@ -19,9 +30,3 @@ function removeStringFromArray(array, string) {
 //
 
 // Call the function to test your code.
-console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
-
-// Create more test examples.
-
-// This is needed for automated testing (more on that later)
-module.exports = removeStringFromArray;
