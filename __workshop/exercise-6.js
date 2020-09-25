@@ -8,7 +8,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeEvens(list) {
-  let newList = list.filter(num => num % 2 !== 0);
+  let newList = list.filter(num => {return num % 2 !== 0});
   return newList;
 }
 // -----------------------------------------------------------------
