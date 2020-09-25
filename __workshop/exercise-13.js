@@ -6,22 +6,22 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countBs(str) {
-  // str is a string
-  const letterArray = str.split("");
-
-  let count = 0;
-  letterArray.forEach(function (ltr) {
-    if (ltr === "B") count += 1;
-  });
-
-  return count;
-}
+    const array = str.split("");
+    let count = 0;
+    array.forEach(element => {
+      if (element === "B") {
+        count = count + 1;
+      }
+    })
+    return count;
+  }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(countBs("BananaBabyBubbles"));
 
 // Create more test cases.
+console.log(countBs("BlueBirdBlackBagBusyBoutique"));
 
 // This is needed for automated testing (more on that later)
 module.exports = countBs;
