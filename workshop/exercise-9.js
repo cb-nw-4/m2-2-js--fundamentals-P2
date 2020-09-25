@@ -1,4 +1,4 @@
-// Exercise 8
+// Exercise 9
 // ⚠️ You are NOT allowed to 'for' or 'while' loops.
 // ⚠️ Instead focus on the array methods (filter, map, forEach, etc)
 //
@@ -10,6 +10,14 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   // list is an array of strings
+  let longNames = list.filter(Element=> {
+    if(Element.length >= 4) return true
+    else return false
+  })
+  let greeting = longNames.map(element=> {
+    return "Hello " + element;
+  })
+  return greeting
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
