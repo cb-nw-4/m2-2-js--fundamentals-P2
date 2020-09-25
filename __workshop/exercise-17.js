@@ -19,9 +19,38 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+
+function exponent(numToExpo, numLength) {
+  return Math.pow(numToExpo, numLength);
+}
+
+function arrAdder(numToAdd) {
+  return numToAdd.reduce((accum, curr) => {
+    return accum + curr;
+  }, 0);
+}
+
 function findArmstrongNumbers(num1, num2) {
   // num1 and num2 are Numbers
+  let newArr = [];
+  for (let i = num1; i <= num2; i++) {
+    let numSplit = `${i}`.split("");
+    let numLength = numSplit.length;
+
+    let arrExpo = numSplit.map((element) => {
+      return exponent(element, numLength);
+    });
+
+    let newTotal = arrAdder(arrExpo);
+    // console.log(newTotal);
+
+    if (newTotal === i){
+      newArr.push(i)
+    }
+
   
+  } 
+  return newArr
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
