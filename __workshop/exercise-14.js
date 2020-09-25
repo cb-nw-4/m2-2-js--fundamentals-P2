@@ -33,6 +33,6 @@ function countChar(str, char) {
 console.log(countChar("BananaBabyBubbles", "a"));
 
 // Create more test cases.
-
+console.log(countChar("BakeABananaBlueBerryBubbleBretzel", "a"));
 // This is needed for automated testing (more on that later)
 module.exports = countChar;
