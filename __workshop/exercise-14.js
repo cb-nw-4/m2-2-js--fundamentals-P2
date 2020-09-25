@@ -9,6 +9,18 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  let accum = 0
+  for (let i = 0; i < str.length; i++){
+
+    if (str[i] === char){
+      accum = accum + 1
+    }
+    else {
+      accum
+    }
+  }
+
+  return accum
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
