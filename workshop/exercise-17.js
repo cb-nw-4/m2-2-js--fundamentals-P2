@@ -21,7 +21,25 @@
 // -----------------------------------------------------------------
 function findArmstrongNumbers(num1, num2) {
   // num1 and num2 are Numbers
-}
+    // num1 and num2 are Numbers
+    let newarr = [];
+    let i=num1;
+    const j=num2;
+    for (i;i<=j;i++)
+    {
+      let arr = i.toString().split("");
+      let k = arr.length;
+      let sum = 0;
+      for(l=0;l<k;l++)
+        {
+          arr[l]=Number(arr[l]);
+          sum = sum + Math.pow(arr[l],k);   
+        }
+        //console.log(arr);
+        if (i === sum) newarr.push(i);  
+    }
+  return newarr;  
+  }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

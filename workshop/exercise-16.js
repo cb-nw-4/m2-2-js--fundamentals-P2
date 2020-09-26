@@ -12,25 +12,23 @@
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
   // num1 and num2 are Numbers
-  
-  let j=num2;
-  for (i=num1;i<=j;i++)
+  let newarr = [];
+  let i=num1;
+  const j=num2;
+  for (i;i<=j;i++)
   {
-    let newarr = [];
-    let numstr = i.toString();
-    let arr = numstr.split("");
+    let arr = i.toString().split("");
     let k = arr.length;
     let sum = 0;
-    for(l=0;l<=k;l++)
+    for(l=0;l<k;l++)
       {
         arr[l]=Number(arr[l]);
-        sum = sum + (arr[l]*arr[l]*arr[l]);   
+        sum = sum + Math.pow(arr[l],3);   
       }
-    if (i === sum) {newarr.push(i);}
-    return newarr;
+      //console.log(arr);
+      if (i === sum) newarr.push(i);  
   }
-  
-  
+return newarr;  
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
