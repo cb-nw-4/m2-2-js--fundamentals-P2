@@ -23,5 +23,10 @@ console.log(
 
 // Create more test cases.
 
+console.log(allLong(["Paris", "Vancouver", "Oslo", "Melbourne", "Tokyo"]));
+
+console.log(allLong(["Pear", "Raspberry", "Mango", "Pineapple", "Lemon", "Lime", "Strawberry"]));
+
+
 // This is needed for automated testing (more on that later)
 module.exports = allLong;

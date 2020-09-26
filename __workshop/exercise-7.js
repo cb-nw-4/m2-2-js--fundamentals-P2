@@ -8,7 +8,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
-  // list is an array of strings
+  return list.filter(function (item) {
+    if (item.length > 5) {
+      return item;
+    }
+  });
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -18,6 +22,12 @@ console.log(
 );
 
 // Create more test cases.
+
+console.log(keepLong(["Rose", "Daisy", "Daffodil", "Hibiscus", "Lily", "Sunflower"])
+);
+
+console.log(keepLong(["Philadelphia", "NYC", "Denver", "Miami", "Boise", "Tulsa", "Portland"])
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;

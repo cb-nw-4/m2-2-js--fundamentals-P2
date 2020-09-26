@@ -12,8 +12,12 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function decodeMessage(string, notCode) {
-  // complete the function
+function decodeMessage(string, notCodes) {
+  notCodes.forEach(myFunction);
+  function myFunction(notCode) {
+    string = string.replace(notCode, "")
+  }
+  return string
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -39,6 +43,11 @@ console.log(
   )
 );
 // Create more test examples.
+
+console.log(decodeMessage("Here is a testblue purplemessage", ["blue", "purple"]));
+
+console.log(decodeMessage("Dogs cats cedar rabbits palm firgoldfish", ["cedar", "palm", "fir"]));
+
 
 // This is needed for automated testing (more on that later)
 module.exports = decodeMessage;

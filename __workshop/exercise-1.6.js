@@ -10,7 +10,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
+  let newArray = array.filter(element => {
+    if(element === string) return false
+    else return true
+  })
+  return newArray
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -22,6 +26,11 @@ function removeStringFromArray(array, string) {
 console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
 
 // Create more test examples.
+
+console.log(removeStringFromArray(["Hi", "how", "are", "you"], "today?"));
+
+console.log(removeStringFromArray(["Today", "is", "the", "23rd", "of", "September"], "in the year 2020"));
+
 
 // This is needed for automated testing (more on that later)
 module.exports = removeStringFromArray;
