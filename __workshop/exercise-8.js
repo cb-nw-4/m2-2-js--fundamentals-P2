@@ -8,14 +8,23 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
-  // list is an array of strings
+  return list.map(function (name) {
+    sayHello = "Hello " + name;
+    return sayHello;
+  });
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
 
 // Create more test cases.
+
+console.log(greet(["Bonnie", "Clyde", "Lone Ranger"]));
+
+console.log(greet(["Ann", "Bob", "Joe", "Lou"]));
+
 
 // This is needed for automated testing (more on that later)
 module.exports = greet;

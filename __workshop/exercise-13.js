@@ -23,5 +23,9 @@ console.log(countBs("BananaBabyBubbles"));
 
 // Create more test cases.
 
+console.log(countBs("BrightBlue"));
+
+console.log(countBs("BobcatsDoNotLikeBears"));
+
 // This is needed for automated testing (more on that later)
 module.exports = countBs;

@@ -16,7 +16,13 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  let array = string.split(" ");
+  let first = array[0];
+  let last = array[array.length -1];
+  if (array.length === 1) {
+    return first;
+  }
+  return first + " " + last;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -28,6 +34,15 @@ function removeMiddleName(string) {
 console.log(removeMiddleName("Morty Antoine Smith"));
 
 // Create more test examples.
+
+console.log(removeMiddleName("King James The Third"));
+
+console.log(removeMiddleName("Sarah Jessica Parker"));
+
+console.log(removeMiddleName("Morty Smith"));
+
+console.log(removeMiddleName("Rick"));
+
 
 // This is needed for automated testing (more on that later)
 module.exports = removeMiddleName;

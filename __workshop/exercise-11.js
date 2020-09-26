@@ -19,5 +19,9 @@ console.log(calculateAverage([76, 60, 83, 100, 78]));
 
 // Create more test cases.
 
+console.log(calculateAverage([5, 25, 31, 7, 19, 22]));
+
+console.log(calculateAverage([104, 98, 78, 90, 91, 99]));
+
 // This is needed for automated testing (more on that later)
 module.exports = calculateAverage;

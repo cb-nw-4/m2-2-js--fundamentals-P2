@@ -36,5 +36,9 @@ console.log(getLetterGrade([48, 95, 65, 48, 59, 78, 72, 65]));
 
 // Create more test cases.
 
+console.log(getLetterGrade([55, 80, 91, 78, 85]));
+
+console.log(getLetterGrade([93, 82, 78, 90, 87, 85]));
+
 // This is needed for automated testing (more on that later)
 module.exports = getLetterGrade;
