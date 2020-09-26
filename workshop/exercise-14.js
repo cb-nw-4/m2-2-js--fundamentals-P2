@@ -9,6 +9,11 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  let newArray = str.split('');
+  let character = newArray.filter(function(letter) {
+    return letter === char;
+  })
+  return character.length;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
