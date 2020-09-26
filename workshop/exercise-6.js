@@ -9,6 +9,8 @@
 // -----------------------------------------------------------------
 function removeEvens(list) {
   // list is an array of numbers
+  let evenNums = list.filter(evenNum => evenNum % 2 !== 0);
+  return evenNums;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
