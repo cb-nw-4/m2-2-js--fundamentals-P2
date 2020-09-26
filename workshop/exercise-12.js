@@ -14,19 +14,38 @@
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
   // grades is an array of numbers
-  const numericalGrade =
-    grades.reduce(function (a, b) {
-      return a + b;
-    }) / grades.length;
+  // const numericalGrade =
+  //   grades.reduce(function (a, b) {
+  //     return a + b;
+  //   }) / grades.length;
 
-  let letterGrade = "A";
+  // let letterGrade = "A";
 
-  if (numericalGrade < 90) letterGrade = "B";
-  if (numericalGrade < 80) letterGrade = "C";
-  if (numericalGrade < 70) letterGrade = "D";
-  if (numericalGrade < 60) letterGrade = "F";
+  // if (numericalGrade < 90) letterGrade = "B";
+  // if (numericalGrade < 80) letterGrade = "C";
+  // if (numericalGrade < 70) letterGrade = "D";
+  // if (numericalGrade < 60) letterGrade = "F";
 
-  return letterGrade;
+  // return letterGrade;
+  let total = 0;
+  grades.forEach (function(grade) {
+    total += grade;
+  });
+  let avg = total / grades.length;
+  avg = Math.round(avg);
+  let finalGrade = "";
+  if (avg < 60) {
+    finalGrade = "F";
+  } else if (avg < 70) {
+    finalGrade = "D";
+  } else if (avg < 80) {
+    finalGrade = "C";
+  } else if (avg < 90) {
+    finalGrade = "B";
+  } else {
+    finalGrade = "A";
+  }
+  return finalGrade;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
