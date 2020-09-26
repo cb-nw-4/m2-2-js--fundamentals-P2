@@ -1,4 +1,4 @@
-// Exercise 13
+// Exercise 14
 // COMPLETE
 // Write a function that takes accepts a string and a letter as arguments
 // and returns the number of times that the letter appears in the string
