@@ -10,6 +10,27 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   // list is an array of strings
+  // return list.filter(function(name){
+  //   if (name.toString().length > 3) {
+  //     return name
+  //   }
+  // })
+  // return list.map(function(name) {
+  //   if (list.filter(function(element){
+  //     if (element.toString().length > 3) {
+  //       return element
+  //     }
+  //   }))
+  //   return "Hello " + name;
+  // })
+  newList = list.filter(function(name){
+    if (name.toString().length > 3){
+      return name;
+    }
+  })
+  return newList.map(function(element) {
+    return "Hello " + element;
+  })
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

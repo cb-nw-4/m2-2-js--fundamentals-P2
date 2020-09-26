@@ -15,7 +15,7 @@ function greet(list) {
   // console.log(newList)
 
   //let newList = list.map(function(name){  //"let" doesn't work, why?
-  return newList = list.map(function(name){
+  return list.map(function(name){
     return "Hello " + name
   })
 }

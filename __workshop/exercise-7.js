@@ -10,8 +10,9 @@
 function keepLong(list) {
   // console.log(list)
   return list.filter(function(name){
-    if (name.toString().length > 5)
+    if (name.toString().length > 5){
     return name;
+    }
   })
 
   // list.forEach(function(name) {
