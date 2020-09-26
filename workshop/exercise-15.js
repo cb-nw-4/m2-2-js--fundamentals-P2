@@ -9,6 +9,10 @@
 // -----------------------------------------------------------------
 function filterNonUnique(arr) {
   // arr is an array of values of any type
+  let newArray =  arr.filter(function(num) {
+    return arr.indexOf(num) == arr.lastIndexOf(num);
+  });
+  return newArray;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
