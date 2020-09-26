@@ -1,5 +1,5 @@
 // Exercise 13
-//
+// COMPLETE
 // Write a function that takes accepts a string and a letter as arguments
 // and returns the number of times that the letter appears in the string
 //
@@ -10,10 +10,13 @@
 function countChar(str, char) {
   // str and char are both strings
   let newArray = str.split('');
-  let character = newArray.filter(function(letter) {
-    return letter === char;
+  let charCount = 0;
+  newArray.filter(function(letter) {
+    if (letter === char) {
+      charCount += 1;
+    }
   })
-  return character.length;
+  return charCount;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
