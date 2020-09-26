@@ -7,14 +7,22 @@
 // -----------------------------------------------------------------
 function countBs(str) {
   // str is a string
-  const letterArray = str.split("");
+  // const letterArray = str.split("");
 
-  let count = 0;
-  letterArray.forEach(function (ltr) {
-    if (ltr === "B") count += 1;
-  });
+  // let count = 0;
+  // letterArray.forEach(function (ltr) {
+  //   if (ltr === "B") count += 1;
+  // });
 
-  return count;
+  // return count;
+  let newArray = str.split('');
+  let charCount = 0;
+  newArray.filter(function(letter) {
+    if (letter === "B") {
+      charCount += 1;
+    }
+  })
+  return charCount;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
