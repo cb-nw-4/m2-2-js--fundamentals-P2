@@ -9,7 +9,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getMax(num1, num2) {
-  // code here
+
+  return Math.max(num1, num2);
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -17,11 +19,12 @@ function getMax(num1, num2) {
 //
 // Without changing the function at all,
 // Can you figure out how we could use it to determine the greater number between 4 integers?
-
+//add num3, num4
 // Call the function to test your code.
 console.log(getMax(12, 43));
 
 // Create more test examples.
-
+console.log(getMax(1, 100));
+console.log(getMax(-100, 1));
 // This is needed for automated testing (more on that later)
 module.exports = getMax;
