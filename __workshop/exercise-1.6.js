@@ -10,7 +10,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
+  let item = string;
+  let index = array.indexOf(item);
+  array.splice(index, 1);
+
+  return array;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -22,6 +26,7 @@ function removeStringFromArray(array, string) {
 console.log(removeStringFromArray(["I", "bacon", "you", "she"], "bacon"));
 
 // Create more test examples.
+console.log(removeStringFromArray(["Salvador Dalí", "Andy Warhol", "Roy Lichtenstein", "Claude Monet", "Yayoi Kusama"], "Claude Monet"));
 
 // This is needed for automated testing (more on that later)
 module.exports = removeStringFromArray;

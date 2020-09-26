@@ -8,7 +8,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function filterNonUnique(arr) {
-  // arr is an array of values of any type
+  let newArr = arr.filter(element => {return arr.indexOf(element) === arr.lastIndexOf(element)});
+  return newArr;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -16,6 +17,6 @@ function filterNonUnique(arr) {
 console.log(filterNonUnique([1, 2, 3, 3, 4, 5, 6, 7, 7, 8]));
 
 // Create more test cases.
-
+console.log(filterNonUnique(["Salvador Dalí", "Salvador Dalí", "Andy Warhol", "Roy Lichtenstein", "Claude Monet", "Yayoi Kusama", "Claude Monet"]));
 // This is needed for automated testing (more on that later)
 module.exports = filterNonUnique;

@@ -20,7 +20,17 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function findArmstrongNumbers(num1, num2) {
-  // num1 and num2 are Numbers
+  let array = [];
+  for (n = num1; n <= num2; n++) {
+    let number = n.toString().split("");
+    let sum = 0;
+    let power = n.toString().length;
+    number.map(element => sum += Math.pow(element, power));
+      if (sum === n) {
+      array.push(sum);
+    }
+  }
+  return array;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

@@ -8,7 +8,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
-  // list is an array of strings
+  let newList = list.filter(word => {return word.length > 5});
+  return newList;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -18,6 +19,9 @@ console.log(
 );
 
 // Create more test cases.
+console.log(
+  keepLong(["pen", "crayon", "paint", "watercolour", "oil"])
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = keepLong;
