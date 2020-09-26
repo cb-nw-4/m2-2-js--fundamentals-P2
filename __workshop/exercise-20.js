@@ -15,8 +15,17 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function every(arr, func) {
-  // arr is an array and f is a function
-  // func takes 1 argument and returns a boolean
+  let array = [];
+  for (i = 0; i < arr.length; i++) {
+  let calculation = func(arr[i]);
+  array.push(calculation);
+  }
+  if (array.every(element => element === true)) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
