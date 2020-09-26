@@ -15,7 +15,16 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function removeMiddleName(string) {
+function removeMiddleName(inName) {
+  let shortName = inName;
+  let firstNameCut = inName.indexOf(' ');
+  let lastNameIndex = inName.lastIndexOf(' ');
+  if( lastNameIndex != (-1 && firstNameCut))
+  {
+    shortName = inName.slice(0, firstNameCut) + ' ' + inName.slice(lastNameIndex+1);
+  }
+
+  return shortName;
   // complete the function
 }
 // -----------------------------------------------------------------
