@@ -13,6 +13,9 @@ function allLong(list) {
     return word.length > 4;
   });
 }
+
+
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
@@ -22,6 +25,6 @@ console.log(
 );
 
 // Create more test cases.
-
+console.log(allLong(["Cho", "Luna", "Padma", "Parvati"]));
 // This is needed for automated testing (more on that later)
 module.exports = allLong;
