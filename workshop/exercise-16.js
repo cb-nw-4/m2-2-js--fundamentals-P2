@@ -1,7 +1,7 @@
 // Exercise 16
 //
 // Write a JavaScript program that returns an array of ALL the numbers
-// between two provided values, num1 and num2, that meet the following criteria.
+// between and including two provided values, num1 and num2, that meet the following criteria.
 //
 // The sum of the cube of the digits of a number is equal to the number.
 //
@@ -12,6 +12,17 @@
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
   // num1 and num2 are Numbers
+  let numbers = [];
+  for(let i = num1; i <= num2; i++) {
+    let digits = i.toString().split('');
+    let sum = 0;
+    digits.forEach(Element =>
+      sum += Math.pow(Element, 3));
+      if (sum === i) {
+        numbers.push(i);
+      }
+  }
+  return numbers;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
