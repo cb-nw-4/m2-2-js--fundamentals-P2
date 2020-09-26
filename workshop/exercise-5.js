@@ -7,6 +7,7 @@
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
   // code here
+  return array.includes(item)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -29,6 +30,9 @@ console.log(itemIsPresent(myArray, "funky")); // true
 console.log(itemIsPresent(myArray, "elephant")); // false
 
 // Create more test cases
+const newArray = ["vanilla", "lavender", "coffee", "tea", "goldfish"];
+console.log(itemIsPresent(newArray, "coffee"));
+console.log(itemIsPresent(newArray, "carnival"));
 
 // This is needed for automated testing (more on that later)
 module.exports = itemIsPresent;

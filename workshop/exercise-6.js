@@ -9,6 +9,11 @@
 // -----------------------------------------------------------------
 function removeEvens(list) {
   // list is an array of numbers
+  let newList = list.filter(Element=> {
+    if(Element % 2 === 0) return false
+    else return true
+  })
+  return newList
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

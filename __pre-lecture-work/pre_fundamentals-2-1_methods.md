@@ -56,7 +56,7 @@ In the following examples use each method in the example and write out the expec
 ```js
 // Example 1
 const sentiment = 'I love programming';
-sentiment.length; // ?
+sentiment.length; // 18
 ```
 
 ---
@@ -70,6 +70,8 @@ It takes 2 parameters, the value to replace and the new value.
 ```js
 // Example 2
 const food = 'I love bacon';
+food.replace('bacon', 'chocolate');
+'I love chocolate'
 ```
 
 ---
@@ -83,6 +85,8 @@ const food = 'I love bacon';
 ```js
 // Example 3
 const sentence = 'Bingo was his name.';
+ sentence.slice(0,5);
+'Bingo'
 ```
 
 ---
@@ -95,6 +99,8 @@ The `.concat()` method is used to join two or more strings.
 // Example 4
 let partOne = 'Do or do not.';
 let partTwo = 'There is no try.';
+partOne.concat(' ' + partTwo);
+'Do or do not. There is no try.'
 ```
 
 ---
@@ -106,6 +112,17 @@ The `.split()` method "split" a string into an array of _substrings_.
 ```js
 // Example 5
 const truth = 'The greatest teacher, failure is.';
+truth.split();
+[ 'The greatest teacher, failure is.' ]
+truth.split("");
+[
+  'T', 'h', 'e', ' ', 'g', 'r',
+  'e', 'a', 't', 'e', 's', 't',
+  ' ', 't', 'e', 'a', 'c', 'h',
+  'e', 'r', ',', ' ', 'f', 'a',
+  'i', 'l', 'u', 'r', 'e', ' ',
+  'i', 's', '.'
+]
 ```
 
 ---
@@ -120,6 +137,8 @@ This method returns -1 if the value to search for never occurs.
 // Example 6
 let yodaSpeak =
   'Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.';
+  yodaSpeak.indexOf('p');
+12
 ```
 
 🤔*Why does JavaScript decide to return `-1` instead of some other value? like `0`?*
@@ -144,7 +163,7 @@ The `.concat()` method returns a _new_ array with the values of two existing arr
 const arrayOne = ['think', 'dream', 'learn', 'write'];
 const arrayTwo = ['thought', 'dreams', 'knowledge', 'truth'];
 
-let newArray = arrayOne.concat(arrayTwo); // ?
+let newArray = arrayOne.concat(arrayTwo); //  newArray = [ 'think', 'dream', 'learn', 'write', 'thought', 'dreams', 'knowledge', 'truth' ]
 ```
 
 ### [`.join()`](https://www.w3schools.com/jsreF/jsref_join.asp)
@@ -164,7 +183,7 @@ const lexicon = [
   'silence',
 ];
 
-let sentence = lexicon.join(); // ?
+let sentence = lexicon.join(); // sentence = 'The,large,shaggy,dog,barked,at,the,silence'
 ```
 
 There are many many more array methods. Here are a few that you should look up and become familiar with. We will go over them together in class.
@@ -187,6 +206,8 @@ Turn an input string into another string
 ```js
 // Exercise 1
 const longSentence = 'I am a really long sentence, look how many words I have!';
+longSentence.slice(19, 37);
+'sentence, look how'
 
 // output: "sentence, look how"
 ```
@@ -194,6 +215,8 @@ const longSentence = 'I am a really long sentence, look how many words I have!';
 ```js
 // Exercise 2
 const greeting = 'Hi World!';
+ greeting.replace("Hi", "Hello");
+'Hello World!'
 
 // output: "Hello world!"
 ```
@@ -203,6 +226,8 @@ const greeting = 'Hi World!';
 ```js
 // Exercise 3
 const age = 'I am 23 years old!';
+age.replace("23 years ", "");
+'I am old!'
 
 // output: "I am old!"
 ```
@@ -210,6 +235,8 @@ const age = 'I am 23 years old!';
 ```js
 // Exercise 4
 const ask = 'How are you today?';
+
+console.log(ask.replace('today', 'yesterday').split(' '));
 
 // output: ["how", "are", "you", "yesterday?"]
 ```
