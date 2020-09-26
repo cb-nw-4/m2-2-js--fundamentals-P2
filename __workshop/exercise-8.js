@@ -8,6 +8,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
+  let words= list.map(function(entry){
+    let newtext='Hello';
+    let newarray= newtext.concat(' ').concat(entry);
+    return newarray;
+  });
+  return words;
   // list is an array of strings
 }
 // -----------------------------------------------------------------
@@ -16,6 +22,7 @@ function greet(list) {
 console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
 
 // Create more test cases.
+console.log(greet(["Renaud", "ELizabeth", "John", "Luke"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = greet;

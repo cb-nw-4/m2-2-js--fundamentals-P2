@@ -7,6 +7,10 @@
 // Edit only the code between the lines (below)
 function getMax(num1, num2) {
   // your code here...
+  if(num1>num2){
+    return console.log(`${num1} is greater`);
+  }
+  else{return console.log(`${num2} is greater`)}
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -17,6 +21,6 @@ function getMax(num1, num2) {
 console.log(getMax(12, 43));
 
 // Create more test examples.
-
+console.log(getMax(-1, -100));
 // This is needed for automated testing (more on that later)
 module.exports = getMax;

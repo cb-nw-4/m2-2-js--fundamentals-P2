@@ -21,6 +21,19 @@
 // -----------------------------------------------------------------
 function findArmstrongNumbers(num1, num2) {
   // num1 and num2 are Numbers
+  let newarr=new Array;
+  let newnum=new Array;
+  for(let i=num1;i<=num2;i++){
+    let sum=0;
+    newnum=Array.from(String(i), Number);
+    for(let j=0; j<newnum.length; j++){
+      sum=sum+(newnum[j]**newnum.length);
+    }
+    if(sum===i){
+      newarr.push(i);
+    }
+  }
+  return newarr;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

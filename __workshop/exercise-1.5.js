@@ -12,9 +12,18 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+
 function decodeMessage(string, notCode) {
   // complete the function
+let arr=notCode;
+let str=string;
+  for(let i=0;i<arr.length; i++) {
+str= str.replace(arr[i], '');
+    
+  }
+return console.log(str);
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

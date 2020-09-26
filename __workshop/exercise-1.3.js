@@ -8,8 +8,10 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
+
 function characterCount(string) {
   // complete the function
+  return string.length;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -21,6 +23,6 @@ function characterCount(string) {
 console.log(characterCount("wubba lubba dub dub"));
 
 // Create more test examples.
-
+console.log(characterCount('This city if full of construction. You see orange cones, hear drilling machines and the detour sign everywhere.'));
 // This is needed for automated testing (more on that later)
 module.exports = characterCount;
