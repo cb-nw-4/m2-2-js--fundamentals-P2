@@ -5,16 +5,19 @@
 //
 // Example:
 // decodeMessage("I amnot the walrus.", ["not"]) should return "I am the walrus."
-// shortenName(Morty Smith") should return "Morty Smith"
-// shortenName(Morty") should return "Morty"
-// shortenName(Morty Antoine Fred Bacon Smith") should return "Morty Smith"
-
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function decodeMessage(string, notCode) {
-  // complete the function
+
+  let string2 = string;
+  notCode.forEach(function (notCodeWord) {
+    string2 = string2.replace(notCodeWord, "");
+    });
+  return string2;
+
 }
+// complete the function
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
@@ -39,6 +42,7 @@ console.log(
   )
 );
 // Create more test examples.
+console.log(decodeMessage("Monday Tuefoodsday Wednesday Thursday but not Frdrinksiday", ["food", "drinks"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = decodeMessage;
