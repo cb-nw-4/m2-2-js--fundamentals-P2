@@ -10,6 +10,13 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   // list is an array of strings
+  let names = list.filter(function(item) {
+    return item.length > 3;
+  })
+  let greetings = names.map(function(name) {
+    return "Hello " + name;
+  })
+  return greetings;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
