@@ -14,6 +14,8 @@
 // -----------------------------------------------------------------
 function decodeMessage(string, notCode) {
   // complete the function
+let newString = string.replace(/notCode/g, '');
+return newString;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

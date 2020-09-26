@@ -1,5 +1,5 @@
 // Exercise 3
-//
+// COMPLETE
 // Write a function that accepts two integers and returns
 // the greater one. (this is slightly different from the previous question.)
 //

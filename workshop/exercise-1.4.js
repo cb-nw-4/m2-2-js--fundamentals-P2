@@ -1,5 +1,5 @@
 // Exercise 1.4
-//
+// COMPLETE
 // Write a function that accepts a name and returns the name as first name and last name.
 // Remove the middle name, if there is one.
 // - This function should still work if there is no middle name.

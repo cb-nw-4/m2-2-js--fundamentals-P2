@@ -1,5 +1,5 @@
 // Exercise 1.6
-//
+// COMPLETE
 // Write a function that accepts an array of strings and a string.
 // It should return the array without the string.
 //

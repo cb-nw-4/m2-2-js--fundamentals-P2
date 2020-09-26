@@ -1,5 +1,5 @@
 // Exercise 12
-//
+// COMPLETE
 // Write a function that accepts an array of grades (numerical values), calculates the average
 // and returns the appropriate letter grade. (see below)
 //

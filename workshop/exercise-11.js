@@ -1,5 +1,5 @@
 // Exercise 11
-//
+// COMPLETE
 // Write a function that accepts an array of grades (numerical values) and returns the average.
 // The returned average should also be rounded to the nearest unit. (no decimals, please!)
 //

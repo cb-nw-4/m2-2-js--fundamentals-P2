@@ -1,5 +1,5 @@
 // Exercise 15
-//
+// COMPLETE
 // Write a function that filters out the non-unique values in an array.
 // This function should accept an array as an argument and return a new array.
 //

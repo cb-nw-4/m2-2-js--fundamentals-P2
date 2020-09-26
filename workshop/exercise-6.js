@@ -1,7 +1,7 @@
 // Exercise 6
 // ⚠️ You are NOT allowed to 'for' or 'while' loops.
 // ⚠️ Instead focus on the array methods (filter, map, forEach, etc)
-//
+// COMPLETE
 // Write a function that accepts a list of numbers and returns a new list with
 // all of the even numbers removed.
 //

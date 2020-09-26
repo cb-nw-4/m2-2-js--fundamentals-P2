@@ -1,5 +1,5 @@
 // Exercise 1.2
-//
+// COMPLETE
 // Write a function that accepts a string of comma-separated names
 // and returns an array of those names.
 //

@@ -1,5 +1,5 @@
 // Exercise 1.1
-//
+// COMPLETE
 // Write a function that accepts a fullName and returns a count of the number of names in fullName
 //
 // Example:

@@ -1,5 +1,5 @@
 // Exercise 1.3
-//
+// COMPLETE
 // Write a function that accepts a string of words
 // and returns the character-count of that string. (include spaces)
 //

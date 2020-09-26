@@ -12,7 +12,19 @@
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
   // num1 and num2 are Numbers
-}
+  let numbers = [];
+  for (let num = num1; num < num2; num++) {
+    numbers.push(num);
+  }
+  return numbers;
+  let sum = 0;
+     for (let sum = 0; i < numbers.length; i++) {
+       sum += Math.pow(Number(numbers[i]), 3);
+     }
+     if (num === sum)
+       numbers.push(num); 
+       return numbers;
+  }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

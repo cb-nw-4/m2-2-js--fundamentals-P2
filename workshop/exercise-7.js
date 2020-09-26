@@ -1,7 +1,7 @@
 // Exercise 7
 // ⚠️ You are NOT allowed to 'for' or 'while' loops.
 // ⚠️ Instead focus on the array methods (filter, map, forEach, etc)
-//
+// COMPLETE
 // Write a function that returns a new list with all the elements
 // that have a length greater than 5.
 //
