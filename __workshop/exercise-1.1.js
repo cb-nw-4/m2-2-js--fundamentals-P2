@@ -8,9 +8,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countNames(fullName) {
-  // complete the function
-  return fullName.split(" ");
+  return fullName.split(" ").length;
 }
+console.log(countNames("Morty Antoine Smith"));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

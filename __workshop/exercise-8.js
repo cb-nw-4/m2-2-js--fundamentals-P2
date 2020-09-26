@@ -8,8 +8,18 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
-  // list is an array of strings
+  // let newList = list.map(function(name){
+  //   newName = "Hello " + name;
+  //   return newName;
+  // }) 
+  // console.log(newList)
+
+  //let newList = list.map(function(name){  //"let" doesn't work, why?
+  return list.map(function(name){
+    return "Hello " + name
+  })
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

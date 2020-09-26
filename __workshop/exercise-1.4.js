@@ -16,8 +16,53 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  let arrayName = string.split(" ");
+  if (arrayName.length > 1) {
+    return arrayName[0] + " " + arrayName[arrayName.length -1]; 
+  } 
+  return arrayName[0];
 }
+
+
+
+const arr = [2, 3, 5, 2];
+
+function someFunction(){
+  arr.forEach(function(element, i){
+    console.log(element, i);
+  }) // undefined;
+  arr.map(function(element, i){
+    console.log(element, i);
+    return element * 2;
+  })// new Array returns [4, 6, 10, 4];
+
+  arr.filter(function(element, i){
+    return element > 10
+  })// new Array returns []
+
+  arr.filter(function(element, i){
+    return element > 2
+  })// new Array returns [3, 5]
+
+  arr.find(function(element, i){
+    return element > 2
+  })// new Array returns 3
+
+  arr.find(function(element, i){
+    return element > 10
+  })// new Array returns undefined
+
+  arr.includes(3);  // true
+  arr.includes(0);  // false
+
+  arr.every(function(element, i){
+    return element > 2
+  }) // false
+  arr.some(function(element, i){
+    return element > 2
+  }) // true
+}
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //
@@ -26,6 +71,7 @@ function removeMiddleName(string) {
 
 // Call the function to test your code.
 console.log(removeMiddleName("Morty Antoine Smith"));
+console.log(removeMiddleName("Smith"));
 
 // Create more test examples.
 
