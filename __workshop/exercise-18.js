@@ -21,10 +21,17 @@
 // -----------------------------------------------------------------
 function map(arr, func) {
   // arr is an array and func is a function
+  const mapArr = []
+  for(let i = 0; i<arr.length; i++){
+    const result = func(arr[i])
+    mapArr.push(result)
+  }
+  return mapArr
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 function charCount(str) {
+
   return str.length;
 }
 

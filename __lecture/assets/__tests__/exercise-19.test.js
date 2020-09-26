@@ -1,6 +1,6 @@
 const filter = require("../../../__workshop/exercise-19");
 
-test("Exercise 18", () => {
+test("Exercise 19", () => {
   expect(
     filter(["Robin", "Bob", "Ric", "Jim"], (x) => x.length > 4)
   ).toStrictEqual(["Robin"]);

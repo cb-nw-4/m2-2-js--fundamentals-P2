@@ -9,6 +9,10 @@
 // -----------------------------------------------------------------
 function keepLong(list) {
   // list is an array of strings
+  let newArr = list.filter(element => {
+     return element.length > 5 ? true : false;
+  });
+  return newArr;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

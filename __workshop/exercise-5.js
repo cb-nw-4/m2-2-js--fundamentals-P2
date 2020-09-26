@@ -7,6 +7,8 @@
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
   // code here
+  let newArr = array.includes(item);
+  return newArr === true ? true : false
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

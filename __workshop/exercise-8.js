@@ -9,6 +9,10 @@
 // -----------------------------------------------------------------
 function greet(list) {
   // list is an array of strings
+  let newArr = list.map(element => {
+    return 'Hello ' + element
+  })
+  return newArr
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

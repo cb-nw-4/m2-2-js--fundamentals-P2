@@ -10,6 +10,15 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   // list is an array of strings
+  let filterArr = list.filter(el => {
+    return el.length >= 4 ? true : false
+  })
+
+  let newArr = filterArr.map(el => {
+    return 'Hello ' + el
+  })
+
+  return newArr
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

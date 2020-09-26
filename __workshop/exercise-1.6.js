@@ -11,6 +11,12 @@
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
   // complete the function
+  let newArr = array.filter(element => {
+    if(element === string) return false
+    else return true
+  })
+return newArr
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
