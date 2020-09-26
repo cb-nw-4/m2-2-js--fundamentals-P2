@@ -1,7 +1,7 @@
 // Exercise 10
 // ⚠️ You are NOT allowed to 'for' or 'while' loops.
 // ⚠️ Instead focus on the array methods (filter, map, forEach, etc)
-//
+// COMPLETE
 // Write a function that returns true if every element of list is of length at least 5.
 // Otherwise, it returns false.
 //
@@ -9,9 +9,10 @@
 // -----------------------------------------------------------------
 function allLong(list) {
   // list is an array of strings
-  return list.every(function (word) {
+  let wordLength = list.every(function(word) {
     return word.length > 4;
   });
+return wordLength;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
