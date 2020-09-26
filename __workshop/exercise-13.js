@@ -22,6 +22,7 @@ function countBs(str) {
 console.log(countBs("BananaBabyBubbles"));
 
 // Create more test cases.
+console.log(countBs("Baby Bowtruckle"));
 
 // This is needed for automated testing (more on that later)
 module.exports = countBs;
