@@ -8,7 +8,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
-  // list is an array of strings
+  return list.map (function(name){
+    newArray ="hello " + name;
+    return newArray;
+  });
+  
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

@@ -16,8 +16,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  let name = string.split(' ');
+  let firstName = name[0];
+  let lastName = name[name.length -1];
+  return firstName.concat(' ').concat(lastName);
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

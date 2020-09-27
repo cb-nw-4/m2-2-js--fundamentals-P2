@@ -9,7 +9,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greetLong(list) {
-  // list is an array of strings
+  return list.filter (function(name){
+    return name.length >= 4;
+  }).map(function(name){
+    let greet ="hello";
+    return greet.concat(name);
+  });
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
