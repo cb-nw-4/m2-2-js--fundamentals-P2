@@ -11,7 +11,15 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
-  // num1 and num2 are Numbers
+  let arr= [];
+  for (num = num1; num <= num2; num++) {
+    let arrN = num.toString().split("");
+    let sum = 0;
+    arrN.forEach(element => sum += Math.pow(element, 3)); 
+    if (num === sum) 
+    arr.push(num); 
+  }
+  return arr;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -19,6 +27,6 @@ function findNumbers(num1, num2) {
 console.log(findNumbers(0, 1000));
 
 // Create more test cases.
-
+console.log(findNumbers(21, 2100));
 // This is needed for automated testing (more on that later)
 module.exports = findNumbers;
