@@ -26,6 +26,10 @@ console.log(
   )
 );
 // Create more test examples.
-
+console.log(
+  arrOFNames(
+    "Blue, Pink, Red, Yellow, Green"
+  )
+);
 // This is needed for automated testing (more on that later)
 module.exports = arrOFNames;

@@ -37,6 +37,6 @@ function removeMiddleName(inName) {
 console.log(removeMiddleName("Morty Antoine Smith"));
 
 // Create more test examples.
-
+console.log(removeMiddleName("Bob Bobette Bob"));
 // This is needed for automated testing (more on that later)
 module.exports = removeMiddleName;

@@ -43,6 +43,6 @@ console.log(
   )
 );
 // Create more test examples.
-
+console.log(decodeMessage("Janutootary Februappleary", ["toot", "apple"]));
 // This is needed for automated testing (more on that later)
 module.exports = decodeMessage;

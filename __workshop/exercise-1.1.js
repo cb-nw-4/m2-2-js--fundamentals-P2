@@ -20,7 +20,8 @@ function countNames(fullName) {
 // Call the function to test your code.
 console.log(countNames("Morty Antoine Smith"));
 // Create more test examples:
-
+console.log(countNames("Princess Bubblegum"));
+console.log(countNames("Princess not so Bubblegum"));
 //
 // This is needed for automated testing (more on that later)
 module.exports = countNames;
