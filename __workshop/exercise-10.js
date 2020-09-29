@@ -22,6 +22,6 @@ console.log(
 );
 
 // Create more test cases.
-
+console.log(allLong(["Um", "Yes", "No", "Maybe"]));
 // This is needed for automated testing (more on that later)
 module.exports = allLong;
