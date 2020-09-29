@@ -6,6 +6,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === item) {
+      return true;
+    }
+  }
+      return false;
   // code here
 }
 // -----------------------------------------------------------------
@@ -29,6 +35,18 @@ console.log(itemIsPresent(myArray, "funky")); // true
 console.log(itemIsPresent(myArray, "elephant")); // false
 
 // Create more test cases
+const array = [
+  "blue",
+  "purple",
+  "triangle",
+  "horse",
+  "window",
+  "car",
+  "glass",
+  "bottle",
+];
 
+console.log(itemIsPresent(array, "triangle"));
+console.log(itemIsPresent(array, "square")); 
 // This is needed for automated testing (more on that later)
 module.exports = itemIsPresent;
