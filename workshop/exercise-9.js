@@ -1,23 +1,23 @@
-// Exercise 7
+// Exercise 8
 // ⚠️ You are NOT allowed to 'for' or 'while' loops.
 // ⚠️ Instead focus on the array methods (filter, map, forEach, etc)
 //
-// Write a function that returns a new list with all the elements
-// that have a length greater than 5.
+// Write a function that only greet people who's names have length at least 4.
+// Otherwise ignore them completely.
+// For example: greetLong(["bob", "daniel"]) returns ["Hello daniel"]
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function keepLong(list) {
+function greetLong(list) {
   // list is an array of strings
+  return list.filter(list => list.length > 4).map(i => 'Hello ' + i);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
-console.log(
-  keepLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"])
-);
+console.log(greetLong(["Scott", "Bob", "Ric", "Jim"]));
 
 // Create more test cases.
 
 // This is needed for automated testing (more on that later)
-module.exports = keepLong;
+module.exports = greetLong;

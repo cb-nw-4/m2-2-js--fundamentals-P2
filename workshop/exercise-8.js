@@ -9,6 +9,7 @@
 // -----------------------------------------------------------------
 function greet(list) {
   // list is an array of strings
+  return list.map(i => 'Hello ' + i);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
