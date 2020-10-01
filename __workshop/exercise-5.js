@@ -7,6 +7,8 @@
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
   // code here
+  const includesString = array.includes(item)
+  console.log(includesString)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

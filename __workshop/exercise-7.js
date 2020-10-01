@@ -8,6 +8,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function keepLong(list) {
+  const shorterList = list.filter(word => word.length >5 )
+  console.log(shorterList)
+
   // list is an array of strings
 }
 // -----------------------------------------------------------------

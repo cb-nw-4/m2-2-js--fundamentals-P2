@@ -1,3 +1,4 @@
+// Have no idea what they are asking
 // Exercise 1.5
 //
 // Write a function that accepts a coded string and an array of "notCode" words.

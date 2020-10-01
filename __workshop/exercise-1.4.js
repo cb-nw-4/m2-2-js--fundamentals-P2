@@ -1,3 +1,4 @@
+// Help searhcing 
 // Exercise 1.4
 //
 // Write a function that accepts a name and returns the name as first name and last name.
@@ -16,7 +17,22 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
+  let arrayName = string.split(' ')
+  let wordCount = arrayName.length;
+  if  (wordCount === 1){
+    console.log(string)
+
+  } else{
+    console.log(arrayName[0]);
+
+    console.log(arrayName[arrayName.length -1])
+
+
+  }
   // complete the function
+  // if there is one word return the first word
+  // if there is two or more return the first and last 
+  console.log(wordCount)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -25,7 +41,7 @@ function removeMiddleName(string) {
 //
 
 // Call the function to test your code.
-console.log(removeMiddleName("Morty Antoine Smith"));
+console.log(removeMiddleName("Morty Antoine Kim Smith"));
 
 // Create more test examples.
 

@@ -9,6 +9,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getMax(num1, num2) {
+  console.log(Math.max(num1, num2))
+
   // code here
 }
 // -----------------------------------------------------------------
@@ -20,6 +22,7 @@ function getMax(num1, num2) {
 
 // Call the function to test your code.
 console.log(getMax(12, 43));
+console.log(getMax(88, 43));
 
 // Create more test examples.
 

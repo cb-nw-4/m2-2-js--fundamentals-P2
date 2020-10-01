@@ -1,3 +1,4 @@
+//Help Searhcing 
 // Exercise 1.6
 //
 // Write a function that accepts an array of strings and a string.
@@ -10,7 +11,18 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
+  // remove string from array 
+  // find the index of the string 
+  let index = array.indexOf(string);
+  let answer = array.splice(index, 1);
+  console.log(answer)
+  //then removes the selection 
+  
+
+
+
   // complete the function
+  return array
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

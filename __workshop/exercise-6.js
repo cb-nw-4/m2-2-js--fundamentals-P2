@@ -8,6 +8,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeEvens(list) {
+  let odd = list.filter(n => n%2)
+  console.log(odd)
   // list is an array of numbers
 }
 // -----------------------------------------------------------------

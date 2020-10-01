@@ -7,6 +7,8 @@
 // -----------------------------------------------------------------
 function calculateAverage(num1, num2, num3, num4, num5) {
   // code here
+  const average = (num1 + num2 + num3 + num4 + num5)/ calculateAverage.length
+  console.log(Math.round(average))
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -14,6 +16,8 @@ function calculateAverage(num1, num2, num3, num4, num5) {
 //
 // Call the function to test your code.
 console.log(calculateAverage(3, 1, 1, 1, 1));
+console.log(calculateAverage(30, 50, 10, 14, 1));
+
 
 // Create more test cases.
 

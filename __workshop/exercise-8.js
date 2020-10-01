@@ -8,6 +8,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function greet(list) {
+    list.forEach(element => console.log(`Hello `+ element))
   // list is an array of strings
 }
 // -----------------------------------------------------------------

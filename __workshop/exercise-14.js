@@ -9,11 +9,15 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  let count = str.split(char).length -1;
+  // let count = (str.match(char) || []).length;
+  console.log(count)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(countChar("BananaBabyBubbles", "a"));
+console.log(countChar("the amazing spiderman", "a"));
 
 // Create more test cases.
 

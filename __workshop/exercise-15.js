@@ -9,6 +9,9 @@
 // -----------------------------------------------------------------
 function filterNonUnique(arr) {
   // arr is an array of values of any type
+  // list all unique values
+  let uniquearray = [...new Set(arr)]  
+  console.log(uniquearray)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

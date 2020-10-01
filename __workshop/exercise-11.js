@@ -16,6 +16,8 @@ function calculateAverage(grades) {
 // Edit only the code between the lines (above)
 
 console.log(calculateAverage([76, 60, 83, 100, 78]));
+console.log(calculateAverage([10, 20]));
+
 
 // Create more test cases.
 

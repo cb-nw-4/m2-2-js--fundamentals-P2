@@ -1,3 +1,4 @@
+// Dont know what they are asking 
 // Exercise 1.2
 //
 // Write a function that accepts a string of comma-separated names
@@ -11,6 +12,7 @@
 // -----------------------------------------------------------------
 function arrOFNames(string) {
   // complete the function
+  return.string
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

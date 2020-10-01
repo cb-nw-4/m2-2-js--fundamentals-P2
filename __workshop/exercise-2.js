@@ -7,6 +7,7 @@
 // Edit only the code between the lines (below)
 function getMax(num1, num2) {
   // your code here...
+  console.log(Math.max(num1, num2))
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -14,7 +15,11 @@ function getMax(num1, num2) {
 //
 //
 // Call the function to test your code.
-console.log(getMax(12, 43));
+console.log(getMax(52, 43));
+console.log(getMax(100, 2000));
+console.log(getMax(80, 5));
+
+
 
 // Create more test examples.
 

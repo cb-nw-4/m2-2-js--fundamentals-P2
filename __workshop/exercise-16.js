@@ -1,3 +1,4 @@
+///Dont know what is being asked
 // Exercise 16
 //
 // Write a JavaScript program that returns an array of ALL the numbers
