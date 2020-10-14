@@ -11,7 +11,7 @@ function countChar(str, char) {
   // str and char are both strings
   let count = str.split(char).length -1;
   // let count = (str.match(char) || []).length;
-  console.log(count)
+  return count
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

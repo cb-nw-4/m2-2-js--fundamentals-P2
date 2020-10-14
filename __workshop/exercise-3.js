@@ -9,7 +9,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getMax(num1, num2) {
-  console.log(Math.max(num1, num2))
+ return (Math.max(num1, num2))
 
   // code here
 }

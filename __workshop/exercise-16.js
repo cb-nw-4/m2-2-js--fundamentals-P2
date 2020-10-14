@@ -1,4 +1,4 @@
-///Dont know what is being asked
+///Dont know what is being asked // Need help grasping 
 // Exercise 16
 //
 // Write a JavaScript program that returns an array of ALL the numbers
@@ -13,6 +13,14 @@
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
   // num1 and num2 are Numbers
+  let numbers= [];
+  let sum = 0
+  for(let i =0; i<num2; i++){
+    sum += i * i * i
+    console.log(`amount of times ${i} `+ sum)
+  }
+  
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

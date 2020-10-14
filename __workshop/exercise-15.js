@@ -10,8 +10,9 @@
 function filterNonUnique(arr) {
   // arr is an array of values of any type
   // list all unique values
-  let uniquearray = [...new Set(arr)]  
-  console.log(uniquearray)
+  let answer = [... new Set(arr)]
+  return answer
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

@@ -9,7 +9,7 @@
 // -----------------------------------------------------------------
 function keepLong(list) {
   const shorterList = list.filter(word => word.length >5 )
-  console.log(shorterList)
+  return shorterList
 
   // list is an array of strings
 }

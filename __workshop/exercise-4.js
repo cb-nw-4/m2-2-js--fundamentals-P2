@@ -8,7 +8,7 @@
 function calculateAverage(num1, num2, num3, num4, num5) {
   // code here
   const average = (num1 + num2 + num3 + num4 + num5)/ calculateAverage.length
-  console.log(Math.round(average))
+ return  Math.round(average)
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

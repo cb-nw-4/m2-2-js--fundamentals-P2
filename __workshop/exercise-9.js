@@ -10,7 +10,10 @@
 // -----------------------------------------------------------------
 function greetLong(list) {
   const shorterList = list.filter(word => word.length >4 )
-  shorterList.forEach(element => console.log(`Hello `+ element))
+  shorterList.forEach((element){
+    return "Hello " + element
+  })
+  // shorterList.forEach(element => console.log(`Hello `+ element))
 
   // list is an array of strings
 }
